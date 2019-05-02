@@ -22,6 +22,5 @@
     }
 
     $user1 = new User('Gauresh', 22);
-    echo $user1->name;
-    echo $user1->age;
+    echo $user1->name . " is " . $user1->age . " Years Old";
     
