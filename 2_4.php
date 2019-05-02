@@ -3,9 +3,17 @@
         public $name;
         public $age;
 
-        public function __construct()
-        {
-            echo 'Constructor Ran';
+        // DEFAULT CONSTRUCTOR
+        // public function __construct()
+        // {
+        //     echo 'Constructor Ran';
+        // }
+
+        // PARAMETERIZED CONSTRUCTOR
+        public function __construct($name, $age) {
+            // echo 'Constructor Ran';
+            $this->name = $name;
+            $this->age = $age;
         }
 
         public function sayHello() {
@@ -13,5 +21,7 @@
         }
     }
 
-    $user1 = new User();
+    $user1 = new User('Gauresh', 22);
+    echo $user1->name;
+    echo $user1->age;
     
